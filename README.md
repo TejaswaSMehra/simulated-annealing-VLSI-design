@@ -44,5 +44,3 @@ The algorithm has been tested with various circuit configurations, including sma
 Feel free to contribute by forking the repository and submitting pull requests. For any issues or feature requests, please open an issue in the GitHub repository.
 
 ```
-
-This version of the README provides a brief overview of the two simulated annealing implementations while maintaining clarity and structure. Let me know if you'd like any further adjustments!
