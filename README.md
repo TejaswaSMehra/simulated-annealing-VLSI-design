@@ -42,5 +42,3 @@ The algorithm has been tested with various circuit configurations, including sma
 ## Contributing
 
 Feel free to contribute by forking the repository and submitting pull requests. For any issues or feature requests, please open an issue in the GitHub repository.
-
-```
