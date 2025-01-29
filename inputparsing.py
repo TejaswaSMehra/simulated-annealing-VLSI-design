@@ -25,7 +25,8 @@ class InputParser:
                 gate_name = parts[0]  # e.g., "g1"
                 width = int(parts[1])  # Gate width
                 height = int(parts[2])  # Gate height
-                self.gate_definitions[gate_name] = (width, height)
+                delay = int(parts[3])  # Gate delay
+                self.gate_definitions[gate_name] = (width, height, delay)
                 index += 1
 
             elif line.startswith("pins"):  # Process pin information
@@ -35,7 +36,7 @@ class InputParser:
                 if gate_name not in self.gate_definitions:
                     raise ValueError(f"Gate '{gate_name}' not defined before its pins.")
 
-                width, height = self.gate_definitions[gate_name]
+                width, height, delay = self.gate_definitions[gate_name]
                 pins = []
 
                 for i in range(2, len(pin_parts), 2):
@@ -44,12 +45,17 @@ class InputParser:
                     pin_number = i // 2  # Pin numbering starts from 1
                     pins.append(Pin(gate_name, pin_number, x, y))
 
-                gate = Gate(gate_name, width, height, pins)
-                gate.set_position(0, 0)  # Initial position (adjust as needed)
+                gate = Gate(gate_name, width, height, pins, delay)
+                gate.x, gate.y = (0, 0)  # Initial position (adjust as needed)
                 self.circuit.add_gate(gate)
 
                 index += 1
 
+            elif line.startswith("wire_delay"):  # Process wire information
+                wire_delay = line.split()[1]
+                self.circuit.wire_delay = int(wire_delay)
+                index += 1
+            
             elif line.startswith("wire"):  # Process wire information
                 parts = line.split()
                 pin1_gate, pin1_pin = parts[1].split(".")

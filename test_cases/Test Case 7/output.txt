@@ -1,0 +1,13 @@
+bounding_box 234 180
+critical_path g1.p4 g1.p13 g4.p31 g4.p21 g6.p16 g6.p14 g9.p23 g9.p16 g10.p6 g10.p16
+critical_path_delay 25900
+g1 0 0
+g2 100 0
+g3 0 99
+g4 106 0
+g5 197 0
+g6 63 99
+g7 83 99
+g8 93 99
+g9 0 177
+g10 79 177

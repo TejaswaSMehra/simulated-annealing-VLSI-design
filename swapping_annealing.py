@@ -2,10 +2,10 @@ import math
 import random
 import copy
 from circuit import Circuit
-import time
+from time import perf_counter
 
-class SimulatedAnnealing2:
-    def __init__(self, circuit, initial_temperature=1000, cooling_rate=0.99, max_iterations=1000):
+class SwappingAnnealing:
+    def __init__(self, circuit, initial_temperature=10**8, cooling_rate=0.999, max_iterations=1000):
         self.circuit = circuit  # Circuit object with gates and nets
         self.initial_temperature = initial_temperature
         self.cooling_rate = cooling_rate
@@ -27,7 +27,7 @@ class SimulatedAnnealing2:
 
         # Track the best solution
         self.best_solution = copy.deepcopy(self.gate_positions)
-        self.best_cost = self.circuit.total_wire_cost()
+        self.best_cost = self.circuit.cost_function()[0]
 
     def initialize_gate_positions(self):
         """Initialize the gate positions in a grid based on max_width and max_height."""
@@ -78,7 +78,7 @@ class SimulatedAnnealing2:
 
 
         # Recalculate the cost after swapping
-        new_cost = self.circuit.total_wire_cost()
+        new_cost = self.circuit.cost_function()[0]
         # If the swap is not accepted, revert the swap
         if not self.is_accepted(current_cost, new_cost, temperature):
             self.envelope_origins[gate1], self.envelope_origins[gate2] = self.envelope_origins[gate2], self.envelope_origins[gate1]
@@ -92,10 +92,17 @@ class SimulatedAnnealing2:
 
     def run(self):
         """Run the simulated annealing algorithm."""
+       
         temperature = self.initial_temperature
-        current_cost = self.circuit.total_wire_cost()
-
+        current_cost = self.circuit.cost_function()[0]
+        start_time = perf_counter()
         for i in range(self.max_iterations):
+            elapsed_time = perf_counter() - start_time  # Calculate elapsed time
+        
+            if elapsed_time > 900:  # If more than 900 seconds have passed, terminate
+               print(f"Terminating after {elapsed_time:.2f} seconds.")
+               break
+            
             if temperature < self.min_temperature:
                 break
 
@@ -109,7 +116,7 @@ class SimulatedAnnealing2:
 
             # Print the progress for debugging
             if (i % 10 == 0):
-                print(f"Iteration {i}: Current Cost = {current_cost}")
+                print(f"Iteration {i}: Current Cost = {current_cost} , Elapsed Time (Annealing) = {elapsed_time:.2f} seconds")
             
             # Cool down the system
             temperature *= self.cooling_rate
@@ -117,25 +124,28 @@ class SimulatedAnnealing2:
         # Deep copy the circuit to preserve the original state
         vertical_copy = copy.deepcopy(self.circuit)
         horizontal_copy = copy.deepcopy(self.circuit)
-
+        self.best_solution = self.circuit
         # Try vertical packing on the deep copy
         pack_gates_vertically(vertical_copy)
-        vertical_cost = vertical_copy.total_wire_cost()
+        vertical_cost = vertical_copy.cost_function()[0]
 
         # Try horizontal packing on another deep copy
         pack_gates_horizontally(horizontal_copy)
-        horizontal_cost = horizontal_copy.total_wire_cost()
+        horizontal_cost = horizontal_copy.cost_function()[0]
 
         # Choose the packing strategy with the lowest cost
-        if vertical_cost < horizontal_cost:
-            print("Choosing vertical packing with cost:", vertical_cost)
+        if vertical_cost < self.best_cost:
+            # print("Choosing vertical packing with cost:", vertical_cost)
+            print("CHOOSING VERTICAL")
             self.best_solution = vertical_copy
             self.best_cost = vertical_cost
-        else:
-            print("Choosing horizontal packing with cost:", horizontal_cost)
+        elif horizontal_cost < self.best_cost:
+            # print("Choosing horizontal packing with cost:", horizontal_cost)
+            print("CHOOSING HORIZONTAL")
             self.best_solution = horizontal_copy
             self.best_cost = horizontal_cost
-
+        
+    
         return self.best_solution, self.best_cost
 
 def pack_gates_horizontally(circuit):
@@ -143,39 +153,33 @@ def pack_gates_horizontally(circuit):
     Align gates horizontally within their respective rows in the given circuit.
     Ensures no horizontal gaps between gates.
     """
-    # Sort the gates by their y-coordinate to group them into rows
-    sorted_gates = sorted(circuit.gates.values(), key=lambda gate: gate.y)  # Sort by y-position
+    sorted_gates = sorted(circuit.gates.values(), key=lambda gate: gate.y)
 
     current_row = []
     current_y = None
-
-    # Process each gate and align horizontally
+    set_y = 0
     for gate in sorted_gates:
         if current_y is None or current_y != gate.y:
-            # Process the current row if it's not empty
             if current_row:
-                align_gates_in_row(current_row)
+                align_gates_in_row(current_row, set_y)
+                set_y = max((gate.y+gate.height) for gate in current_row)
 
-            # Start a new row
             current_row = [gate]
             current_y = gate.y
         else:
-            # Continue adding gates to the current row
             current_row.append(gate)
     
-    # Align the last row
     if current_row:
-        align_gates_in_row(current_row)
+        align_gates_in_row(current_row, set_y)
 
-def align_gates_in_row(row_gates):
+def align_gates_in_row(row_gates, set_y):
     """
     Align gates in a single row, starting from the left and packing horizontally.
     """
-    current_x = 0  # Start stacking from the left (x = 0)
-
+    current_x = 0 
     for gate in row_gates:
-        # Place the gate at the current_x and update its position
         gate.x = current_x
+        gate.y = set_y
         current_x += gate.width
 
 def pack_gates_vertically(circuit):
@@ -183,38 +187,32 @@ def pack_gates_vertically(circuit):
     Align gates vertically within their respective columns in the given circuit.
     Ensures no vertical gaps between gates.
     """
-    # Sort the gates by their x-coordinate to group them into columns
-    sorted_gates = sorted(circuit.gates.values(), key=lambda gate: gate.x)  # Sort by x-position
+    sorted_gates = sorted(circuit.gates.values(), key=lambda gate: gate.x) 
 
     current_column = []
     current_x = None
-
-    # Process each gate and align vertically
+    set_x = 0
     for gate in sorted_gates:
         if current_x is None or current_x != gate.x:
-            # Process the current column if it's not empty
             if current_column:
-                align_gates_in_column(current_column)
+                align_gates_in_column(current_column, set_x)
+                set_x = max((gate.x+gate.width) for gate in current_column)
 
-            # Start a new column
             current_column = [gate]
             current_x = gate.x
         else:
-            # Continue adding gates to the current column
             current_column.append(gate)
     
-    # Align the last column
     if current_column:
-        align_gates_in_column(current_column)
+        align_gates_in_column(current_column, set_x)
 
-def align_gates_in_column(column_gates):
+def align_gates_in_column(column_gates, set_x):
     """
     Align gates in a single column, starting from the bottom and packing vertically.
     """
-    current_y = 0  # Start stacking from the bottom (y = 0)
-
+    current_y = 0
     for gate in column_gates:
-        # Place the gate at the current_y and update its position
         gate.y = current_y
+        gate.x = set_x
         current_y += gate.height
 
