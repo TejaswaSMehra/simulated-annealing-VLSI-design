@@ -32,7 +32,7 @@ This repository implements a simulated annealing algorithm for optimizing the pl
 
 1. **SimulatedAnnealing**: This implementation uses basic perturbation techniques to explore the solution space. It randomly moves gates and accepts or rejects new configurations based on a probability function that considers cost differences.
 
-2. **SimulatedAnnealing2**: This enhanced version incorporates a grid-based packing strategy, organizing gates within envelopes to avoid overlaps. It allows for both vertical and horizontal packing, selecting the configuration that minimizes wirelength effectively.
+2. **SwappingAnnealing**: This enhanced version incorporates a grid-based packing strategy, organizing gates within envelopes to avoid overlaps. It allows for both vertical and horizontal packing, selecting the configuration that minimizes wirelength effectively.
 
 ## Test Cases
 
