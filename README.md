@@ -6,7 +6,6 @@ This repository implements a simulated annealing algorithm for optimizing the pl
 - [Installation](#installation)
 - [Usage](#usage)
 - [File Descriptions](#file-descriptions)
-- [Simulated Annealing Approaches](#simulated-annealing-approaches)
 - [Test Cases](#test-cases)
 
 ## Usage
