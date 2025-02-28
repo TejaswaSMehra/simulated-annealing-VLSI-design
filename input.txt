@@ -1,111 +1,1007 @@
-g1 32 35 5
-pins g1 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 32 5 32 8 32 11 32 14 32 17 32 20 32 23 32 26 32 29 32 32 32 35
-g2 35 33 5
-pins g2 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 35 5 35 8 35 11 35 14 35 17 35 20 35 23 35 26 35 29 35 32 35 35
-g3 33 30 5
-pins g3 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 33 5 33 8 33 11 33 14 33 17 33 20 33 23 33 26 33 29 33 32 33 35
-g4 36 34 5
-pins g4 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 36 5 36 8 36 11 36 14 36 17 36 20 36 23 36 26 36 29 36 32 36 35
-g5 34 32 5
-pins g5 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 34 5 34 8 34 11 34 14 34 17 34 20 34 23 34 26 34 29 34 32 34 35
-g6 37 31 5
-pins g6 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 37 5 37 8 37 11 37 14 37 17 37 20 37 23 37 26 37 29 37 32 37 35
-g7 35 36 5
-pins g7 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 35 5 35 8 35 11 35 14 35 17 35 20 35 23 35 26 35 29 35 32 35 35
-g8 32 33 5
-pins g8 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 32 5 32 8 32 11 32 14 32 17 32 20 32 23 32 26 32 29 32 32 32 35
-g9 38 35 5
-pins g9 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 38 5 38 8 38 11 38 14 38 17 38 20 38 23 38 26 38 29 38 32 38 35
-g10 33 30 5
-pins g10 0 5 0 8 0 11 0 14 0 17 0 20 0 23 0 26 0 29 0 32 0 35 33 5 33 8 33 11 33 14 33 17 33 20 33 23 33 26 33 29 33 32 33 35
-wire_delay 1
-wire g1.p11 g2.p1
-wire g1.p12 g2.p5
-wire g1.p13 g2.p9
-wire g1.p14 g2.p2
-wire g1.p15 g2.p6
-wire g1.p16 g2.p10
-wire g1.p17 g2.p3
-wire g1.p18 g2.p7
-wire g1.p19 g2.p4
-wire g1.p20 g2.p8
-wire g2.p11 g3.p2
-wire g2.p12 g3.p6
-wire g2.p13 g3.p10
-wire g2.p14 g3.p3
-wire g2.p15 g3.p7
-wire g2.p16 g3.p1
-wire g2.p17 g3.p4
-wire g2.p18 g3.p8
-wire g2.p19 g3.p5
-wire g2.p20 g3.p9
-wire g3.p11 g4.p1
-wire g3.p12 g4.p5
-wire g3.p13 g4.p9
-wire g3.p14 g4.p2
-wire g3.p15 g4.p6
-wire g3.p16 g4.p10
-wire g3.p17 g4.p3
-wire g3.p18 g4.p7
-wire g3.p19 g4.p4
-wire g3.p20 g4.p8
-wire g4.p11 g5.p2
-wire g4.p12 g5.p6
-wire g4.p13 g5.p10
-wire g4.p14 g5.p3
-wire g4.p15 g5.p7
-wire g4.p16 g5.p1
-wire g4.p17 g5.p4
-wire g4.p18 g5.p8
-wire g4.p19 g5.p5
-wire g4.p20 g5.p9
-wire g5.p11 g6.p1
-wire g5.p12 g6.p5
-wire g5.p13 g6.p9
-wire g5.p14 g6.p2
-wire g5.p15 g6.p6
-wire g5.p16 g6.p10
-wire g5.p17 g6.p3
-wire g5.p18 g6.p7
-wire g5.p19 g6.p4
-wire g5.p20 g6.p8
-wire g6.p11 g7.p2
-wire g6.p12 g7.p6
-wire g6.p13 g7.p10
-wire g6.p14 g7.p3
-wire g6.p15 g7.p7
-wire g6.p16 g7.p1
-wire g6.p17 g7.p4
-wire g6.p18 g7.p8
-wire g6.p19 g7.p5
-wire g6.p20 g7.p9
-wire g7.p11 g8.p1
-wire g7.p12 g8.p5
-wire g7.p13 g8.p9
-wire g7.p14 g8.p2
-wire g7.p15 g8.p6
-wire g7.p16 g8.p10
-wire g7.p17 g8.p3
-wire g7.p18 g8.p7
-wire g7.p19 g8.p4
-wire g7.p20 g8.p8
-wire g8.p11 g9.p2
-wire g8.p12 g9.p6
-wire g8.p13 g9.p10
-wire g8.p14 g9.p3
-wire g8.p15 g9.p7
-wire g8.p16 g9.p1
-wire g8.p17 g9.p4
-wire g8.p18 g9.p8
-wire g8.p19 g9.p5
-wire g8.p20 g9.p9
-wire g9.p11 g10.p1
-wire g9.p12 g10.p5
-wire g9.p13 g10.p9
-wire g9.p14 g10.p2
-wire g9.p15 g10.p6
-wire g9.p16 g10.p10
-wire g9.p17 g10.p3
-wire g9.p18 g10.p7
-wire g9.p19 g10.p4
-wire g9.p20 g10.p8
+g1 67 42
+pins g1 67 14 67 41 0 18 0 27 67 34 0 33 0 8 67 21 0 42 0 17 67 9 67 14 67 34 0 37 67 40 67 42 0 16 67 32 0 19 0 9 0 15 67 16 67 34 67 14 0 1
+g2 51 45
+pins g2 51 32 0 44 51 35 51 45 0 17 0 4 51 0 51 14 51 6
+g3 21 73
+pins g3 21 53 0 30 21 48 0 53 0 22
+g4 53 67
+pins g4 53 45 0 31 53 37 0 16 53 32 0 41 53 46 0 66 53 66 53 13 53 43 53 65 0 21 0 17 53 50 53 11 53 31 0 57 53 22 53 49 53 3 0 12 0 24 53 10 0 62
+g5 1 20
+pins g5 1 6 1 6 0 3 0 20 0 16 0 8 1 2 0 4 1 18 1 18 1 19 1 10 1 19 0 6 0 1 1 8 1 6
+g6 91 17
+pins g6 0 13 0 13 0 10 91 0 0 9 91 16 0 14 0 6 91 16 0 6 0 11 0 12 0 5 0 9 0 1 91 10 91 7 0 9 0 11 91 0
+g7 69 49
+pins g7 69 23 69 14 0 10 0 22 69 13 69 12 69 36 0 28 69 48 69 31
+g8 44 11
+pins g8 44 4 0 3 44 6 0 10 44 4 0 6 44 3 44 7 0 9 0 7 0 8 44 8 0 1 0 0 0 6 0 1 0 1 0 10 0 4 44 5 44 7 0 3 44 6 44 7 0 2 44 1 44 1 0 5 0 3 44 8 44 4 44 1 44 11 44 7 44 10 44 11 44 10 44 6 44 1 44 8
+g9 78 82
+pins g9 0 17 78 36 0 71 0 56 78 9 0 53 78 21 0 17 0 73 0 49 78 41 78 75 0 52 0 10 78 60 78 0 0 39 0 39 0 57 78 76 78 43 78 10 78 27 78 56 78 29 78 20 78 53 0 26 78 30 0 75 78 1 0 21 78 8 0 48 78 4 0 39
+g10 36 71
+pins g10 36 61 36 53 0 52 0 36 36 26 36 43 0 26 36 59 36 71 36 4 36 28 0 29 36 41 36 41 0 6 36 43 36 30 36 41 36 65 0 52 0 1 36 3 36 57 36 19 36 66 36 32 36 38
+g11 98 68
+pins g11 98 50 0 12 98 41 0 61 0 61 0 12 98 59 98 20 98 54 98 49 98 60 98 28 0 30 98 24 0 30 98 46 0 28 0 51 0 19 0 52 0 3 0 30 98 54 0 52 98 10 0 12 98 3 98 47 98 32
+g12 25 31
+pins g12 0 28 25 8 25 23 25 16 0 25 0 20 0 22 0 15 0 28 25 17
+g13 40 24
+pins g13 0 4 40 2 0 17 0 23 0 13 40 23 40 5 40 3 40 23 0 23 0 17 40 16
+g14 4 2
+pins g14 4 0 0 2 0 1 0 0 4 2 4 0 4 2 0 2 4 0 4 2 0 1 0 2 4 2 4 1 4 0 4 1
+g15 53 79
+pins g15 0 60 53 34 53 17 0 24 53 44 0 78 53 4 53 22 0 59 0 49 0 39 0 65 53 79 53 69 0 69 53 35 53 70 0 68 53 40 53 59 53 71 0 41 53 65 0 14 0 4 0 74 0 5 53 15 53 40 53 29 0 37 0 68 53 14 53 49 53 67 0 0 53 22 53 71 53 49
+g16 43 74
+pins g16 43 65 0 0 0 74 43 61 43 15 0 74 0 32 0 65 0 44 0 44 0 18 43 60 0 42 43 1 43 1 43 1 0 26 0 12 43 4 0 5 0 10 43 72 43 16 0 18 0 42 0 33 43 38 43 63 0 30 0 2 0 52 0 4 0 4 0 1 0 58
+g17 91 39
+pins g17 0 24 91 22 91 1 91 24 91 15 0 23 0 18 0 14 0 15 0 13 0 31 0 27 0 22 0 13 91 38 0 15 91 39 91 12 0 5 91 22 0 36 0 14 91 12 91 24 91 34 0 12 91 3 91 18 91 24 0 30 0 20 91 1 0 22 91 32 91 13 91 36
+g18 58 16
+pins g18 58 14 0 10 58 12 58 11 0 12 58 15 0 14 0 10 58 9 0 15 0 14 0 13 0 14 58 12 0 14 0 0 58 6 58 0 58 7 0 11 0 5 0 12 58 9 58 12 0 13 58 10 58 1 58 14 0 9 0 8 0 9 0 13 0 12 58 16 0 0 0 15 58 4
+g19 92 1
+pins g19 92 0 0 1 0 0 0 1 92 1 92 0 92 0 92 1 0 0 0 0 0 1 0 0 0 1 92 1 0 0 92 1 0 1 92 0 0 0 0 1 0 1 92 1 92 1 92 1 0 1 92 1 92 1 0 0 92 0 92 1 92 1 0 1 0 0 92 0 92 1 92 1 92 1 0 0 0 0 92 0
+g20 2 20
+pins g20 2 15 0 16 2 1 0 11 0 0 2 6 0 6 2 8 0 14 2 12 0 18 0 4 2 14 2 17 2 2 2 18 2 19 0 19 0 14 0 6 2 0 0 13 2 5 2 20 2 11 2 2 0 7 2 4 0 9 0 11 0 2 2 13 2 1
+g21 47 85
+pins g21 0 56 47 64 0 66 0 53 47 69 47 37
+g22 27 29
+pins g22 27 8 27 2 0 14 0 7 0 7 27 17 27 21 0 9 27 27 27 6 0 2 0 27 0 25 0 10 27 6 27 6 27 19 27 17 27 25 27 18 0 27 27 4 27 11 0 10 27 10 0 5 27 7 27 27
+g23 17 44
+pins g23 17 4 17 10 17 0 0 13 0 14 17 1 0 3 17 17 0 28 0 2 0 36 0 3 0 9 17 19 0 38 0 37 0 42 17 35
+g24 50 92
+pins g24 0 13 0 79 0 18 0 74 0 17 50 56 0 81 0 30 50 63 0 48 0 49 0 62 50 88 50 1 0 50 0 64 50 66 50 72 0 22 50 3 50 46 50 38 50 79 50 14 0 1
+g25 55 70
+pins g25 55 56 0 37 55 13 55 7 55 28 0 54 55 48 55 38 0 9 55 58 55 14 55 3 55 41 55 43 55 29
+g26 63 87
+pins g26 0 83 63 75 63 74 0 61 63 61 63 72 63 44 0 41 63 38 63 72 0 80 0 67 63 61 0 68 0 19 63 57 0 78 0 80 63 19 63 49 63 34
+g27 31 48
+pins g27 31 21 0 13 31 34 0 28 31 18 31 25 0 31 31 35 0 40
+g28 9 89
+pins g28 0 83 0 17 0 71 0 80 9 31 9 39 0 23 0 35 9 52 0 2 0 58 9 28 0 12 0 35 9 3 0 39 9 57 9 56 0 32 9 43 0 5 0 2 0 66 0 59
+g29 3 39
+pins g29 0 14 3 33 3 26 3 13 3 35 0 26 0 8 3 23 0 9 0 12 3 3 3 16 0 13 3 34 0 37 3 26 3 3 0 27 3 11 0 38 0 9 0 11 0 2 3 14 0 28 0 8 0 6 3 11 0 11 3 36 3 27 3 21 0 27
+g30 98 42
+pins g30 0 34 98 8 0 23 98 38 0 39 0 39 98 19 98 11 98 36
+g31 62 83
+pins g31 0 49 0 50 0 9 0 11
+g32 51 49
+pins g32 51 27 51 4 0 49 0 13 51 37 0 22 51 1 0 35 0 22 51 11 51 2 0 33 0 7 51 41 0 34 0 32 0 49 51 40 0 13 51 10
+g33 56 48
+pins g33 0 47 56 4 56 39 56 23 56 48 56 4 0 26 56 34 0 48 0 42 0 9 0 26 0 13 0 1
+g34 33 2
+pins g34 33 0 33 1 33 0 0 1 33 1 33 0 33 2 0 0 33 1 0 0 0 0 0 0 0 0 33 1 0 0 0 2 33 2 33 2 0 1 33 1 33 1 33 0 33 0 33 0 33 0 0 0
+g35 67 76
+pins g35 0 12 0 36 0 0 0 18 0 41 67 28 0 47 0 3 0 71 67 61 0 76 67 35 0 74 67 73 67 20 67 60 67 48 67 16 67 16 67 54 0 71 67 0 0 43 67 33 67 20 0 21 67 24 67 32
+g36 37 55
+pins g36 37 52 37 9 37 39 37 18 0 43 37 36 37 8 0 19 0 35 37 32 37 14 0 4 0 5 37 9 0 32 0 43 37 55 0 10 37 4 37 41 37 5 37 19 0 18 0 40 0 0 0 22 0 49 37 21 0 29 37 5 0 14 0 40 0 16 0 48 0 27 37 23 37 36 0 43 0 42 37 46
+g37 21 72
+pins g37 0 50 0 4 0 24 0 64 0 61 21 61 21 65 21 2 21 16 21 34 21 15 21 36
+g38 10 23
+pins g38 0 16 10 12 0 0 0 10 0 22 0 4 10 6 10 1 0 21 10 18 10 3 10 21 10 1 10 7 0 19 0 18 0 3 0 20 0 16 10 0 10 18 0 16 0 19 10 12 10 10 0 17 10 0
+g39 56 3
+pins g39 56 2 56 2 56 1 56 0 0 2 56 3 56 2 0 1 56 1 0 2 56 1 56 0 56 3 56 2 56 2 0 3 56 1 56 3 0 0
+g40 11 26
+pins g40 0 7 0 17 11 18 0 7 11 5 0 25 11 17 0 17 11 16 11 11 11 18 11 11 0 8 0 23 0 4 11 17 11 0 0 26 11 26 11 10 0 22 0 24 0 9 0 18 11 15 11 14 11 5 0 8 11 10 11 5 11 26 11 25 0 2 0 25 0 25 0 1
+g41 94 64
+pins g41 94 55 94 18 0 14 0 28 0 2 0 24 0 31 0 39 94 52 0 37 94 61 94 61 94 35 94 10 94 54 0 2 0 18 94 55 0 3 94 49
+g42 47 73
+pins g42 0 69 0 11 0 13 47 15 0 48 0 20 0 33
+g43 61 29
+pins g43 0 28 0 21 0 15 0 24 61 15 61 2 61 19 61 21 0 3 61 4 61 1 0 13 61 10
+g44 32 40
+pins g44 32 27 0 29 32 30
+g45 60 96
+pins g45 0 92 0 72 60 84 60 79 0 7 0 76 60 74 60 80 60 69 60 1 60 31 0 74 0 48 0 85 60 14 60 92 60 55 60 53 0 7 60 40 0 25 60 60 60 89 0 53 0 25 0 72 60 86 60 64 60 4 60 85 0 13 60 96 0 48 0 7 60 85 0 36 0 41
+g46 63 77
+pins g46 0 45 0 51 63 1 63 75 63 77 63 1 0 67 63 24 63 71
+g47 96 17
+pins g47 96 17 0 3 0 16 0 11 96 6 0 2 0 6 0 12 0 16 0 10 96 13
+g48 64 7
+pins g48 0 2 0 5 64 4 0 6 0 3 64 6
+g49 73 41
+pins g49 73 10 73 35 0 4 73 31 73 21 73 35 0 40 73 3 73 41 0 12 73 25
+g50 31 22
+pins g50 31 11 0 1 0 13 0 1 31 15 0 6 0 1 31 8 0 11
+g51 46 3
+pins g51 0 0 46 3 0 3 46 1 46 0 0 3 46 1 46 3 46 2 46 3 46 0 0 1 0 1 46 0 46 0 46 2 46 3 0 2 46 1 46 1 0 1 0 3 0 1
+g52 32 87
+pins g52 0 27 32 25 32 38 32 59 0 41 32 42 0 68 32 56 32 5 0 61 0 29 0 28 0 8 0 37 0 50 0 58 32 21 32 85 32 62 32 67 0 3 0 64
+g53 21 16
+pins g53 0 6 0 0 0 5 0 5 21 12 21 11 21 10 21 1 21 14 0 7 0 12 21 8 21 13 0 14
+g54 14 53
+pins g54 0 35 14 50 14 0 14 48 14 16 14 37 0 40 0 4 0 19 0 52 0 7 0 27 0 5 14 43 0 16 14 8 14 20 14 15 0 49 0 35 14 40 0 38 14 28 0 3 0 19 14 16 14 39 14 32 14 26
+g55 100 31
+pins g55 0 5 100 24 0 9 0 28 100 10 100 6 0 25 0 9 100 29 100 8 0 15 0 20 0 27 100 3 100 24 100 13 100 0 100 31 100 21 0 17 100 1 100 4 100 16
+g56 17 58
+pins g56 0 43 17 26 17 37 17 8 0 34 0 0 0 39 17 11
+g57 78 52
+pins g57 78 32 78 2 0 38 0 22 0 12 78 2 0 44 0 24 78 32 78 46 0 0 0 41 78 19 0 12 0 12 78 47 0 0 78 23 78 46 0 15 0 7 0 22 0 10 0 11 0 7 0 21 78 27 0 1 78 23 78 7 0 46 78 43
+g58 72 46
+pins g58 0 12 0 29 72 46 72 31 0 13 72 5 72 3 0 34 0 20 72 9 72 35 0 34
+g59 23 19
+pins g59 23 10 0 12 23 6 23 14 23 9
+g60 42 2
+pins g60 42 2 42 0 0 1
+g61 4 10
+pins g61 4 4 4 4 4 7 4 10 4 0
+g62 38 37
+pins g62 0 22 38 22 0 34 38 36 0 6 38 23 38 31 0 12 38 8 38 25 38 16 38 23 38 24 38 27 0 22 38 14 38 16 38 9 0 36 38 35 38 26
+g63 64 27
+pins g63 0 21 0 2 64 15 64 21 0 9 0 21 64 1 64 16 0 4 64 15 64 21 0 0 0 0 64 24 0 1 0 8 64 11 0 1 0 20 64 20 64 7 64 25 0 25 64 8 64 18 64 1 0 11 64 22 0 26 64 9
+g64 47 30
+pins g64 47 10 0 5 0 22 47 23 47 17 0 15 47 21 47 7 0 23 0 17 0 10 0 8 47 0
+g65 9 86
+pins g65 9 6 9 12 9 33 0 24 0 65 0 56 9 75 9 70 0 55 9 73 9 10 0 12 0 29 9 33 9 70 9 55 0 69
+g66 50 21
+pins g66 50 12 50 18 50 4 50 0 50 10 50 19 0 2 0 15 50 3 50 20 50 15 0 11 0 14 50 6 0 12 0 17 50 11 50 21 0 10 50 20 50 18 0 15 0 19 0 11 50 7 0 13 50 1 50 11 50 17
+g67 39 31
+pins g67 0 22 0 23 0 9 39 20 39 14 39 2 39 3 0 0 39 4 39 13 0 1 39 17 0 23 39 18 0 29 0 9 0 10 0 2 0 10 0 5 0 22 39 31 39 26 39 30 0 23 39 7 39 17 39 21 39 3 39 5 39 14 0 19 39 31 0 22 0 2 0 8 39 19 0 2 39 6
+g68 25 74
+pins g68 0 61 25 37 25 27 25 19 0 16 25 16 0 64 25 39 0 31 25 63 0 50 0 68 25 58 25 58 0 59 0 73 0 47 0 25 25 34 25 52 25 56 0 16 25 52 0 70 0 41 25 38 0 42 0 55
+g69 42 89
+pins g69 42 4 0 14 0 2 0 18 0 48 0 61 42 70 42 26 0 42 42 24 0 33 0 75 0 33 0 12 0 9 0 29 0 39 42 69 42 49 42 33 42 17 0 76 42 41 0 59 0 75 42 78 42 44 0 38 42 11 42 75 42 81 42 24 0 57 42 6 0 50 42 9
+g70 82 49
+pins g70 0 19 0 48 0 6 0 42 82 23 0 29 0 46 0 37 0 27 0 26 82 19 82 45 82 25
+g71 80 17
+pins g71 80 3 80 17 0 14 0 14 0 16 80 15 80 15 80 2 0 2 0 14 80 9 0 1 0 2 80 15 80 10 80 9 80 0 0 15 80 14 0 8 80 13 0 4
+g72 67 47
+pins g72 0 4 67 21 67 16 0 20 0 45 67 3 0 13
+g73 1 74
+pins g73 1 6 0 20 1 69 1 60 1 31 1 29
+g74 55 19
+pins g74 0 3 55 17 0 14 55 15 0 4 0 4 55 12 0 7 0 13 55 9 0 17 55 2 55 3 0 10 55 7 55 7 0 8 55 11 0 15 55 1 55 18 55 10 0 7 55 4
+g75 18 57
+pins g75 18 19 18 45 18 39 0 32
+g76 81 39
+pins g76 81 18 0 4 81 19 0 9 81 10 81 19 81 39 0 29 81 20 0 4 81 19 81 30 0 27 81 22 0 32 0 22 0 8 0 34 81 3 81 34 0 15 81 6 0 28 81 26 81 32 81 27 81 0 81 19 0 18 81 12 0 11 0 1
+g77 67 5
+pins g77 67 5 67 0 67 1 67 1 0 2 67 2 67 3 0 3 67 3 0 3 67 3 0 3 67 4 67 3 0 5 0 1 67 2 0 2 0 5 0 4 0 0 0 5 0 0 67 0 0 2 0 1 67 5 67 2 67 1 0 5 0 0 0 4 0 0 0 4 67 3
+g78 14 75
+pins g78 0 47 14 44 0 58 0 48 0 61 0 31 0 55 0 14 0 6 14 15 0 34 0 43 0 10 14 47 0 37 14 23 0 18 0 39 0 66 0 6
+g79 13 81
+pins g79 0 58 13 30 13 66 13 61 13 22 13 36 13 30 13 30 0 29 0 19 13 56 0 71 13 29
+g80 91 56
+pins g80 0 10 0 30 91 32 0 34 0 17 91 26 91 41 0 17 0 15 91 14 0 43 0 23 91 52 91 34 91 28 91 23 0 6 91 8 0 15 91 33 91 49 0 48 91 18 0 54 0 40 91 20 91 35 91 49 0 20 91 23
+g81 18 76
+pins g81 0 24 0 61 18 62 0 20 18 51 0 27 18 55 18 9 18 9 0 63 0 41 18 34 18 66 0 72 0 38 18 42 18 11 0 66 0 3 18 14 0 10 0 19 18 39 0 8
+g82 60 26
+pins g82 60 21 0 6 60 21 0 10 0 7 60 22 60 10 60 15 0 24 0 12 0 15 0 19 60 24 60 5 60 16 0 13 60 19 0 1 0 16 60 24 60 0 0 2 0 15 0 6 0 13 60 13 0 22 60 8 0 25
+g83 62 48
+pins g83 62 48 0 43 62 43 0 13 62 23 0 0 62 35 62 5 0 19 62 41 0 30 0 12 62 15 62 11 0 17 62 33 0 35 0 48 62 48 0 12 0 33 62 26 0 16 0 32 0 13 62 45 62 5 0 42 62 41 62 8 62 4 0 14
+g84 67 64
+pins g84 0 51 0 4 67 62 0 39 67 18 67 20 0 12 67 18 0 14 0 0 67 0 0 16 67 44
+g85 43 100
+pins g85 43 22 0 26 0 13 0 10 0 16 0 49 0 62 0 24
+g86 81 66
+pins g86 81 30 81 59 81 46 0 46 0 49 0 19 81 49 81 3 0 4 0 62 81 0 0 30 81 38 0 3 0 41 81 8 81 53 0 7 81 2 81 53
+g87 34 64
+pins g87 0 60 0 45 0 31 34 35 34 9 34 42 34 30
+g88 50 13
+pins g88 50 6 0 5 50 2 50 13 0 1 50 2 50 6 0 0 0 4 0 4 50 0 0 9 50 0 0 2 0 3 0 5 0 11 0 9 50 9 0 8 50 11 50 1 0 0 0 11 50 12 0 4 0 13 0 12 50 3 0 10 50 9 0 2 0 13
+g89 82 84
+pins g89 0 27 0 63 0 57 82 84 82 46 82 28 82 43 82 34 82 12 0 8 82 25 0 0 0 60 82 62 0 58 0 39 82 75 0 70 82 9 82 28 0 64 82 2 82 64 0 47 82 22 0 67 82 43 82 27 0 45 82 33 0 20 0 24 82 52 82 46 0 37
+g90 94 41
+pins g90 94 15 0 12 0 40 0 30 0 30 0 10 94 16 94 40 94 3 94 40 94 28 0 37 94 28 94 5 0 5 94 19 0 29 94 25 0 38 0 9 94 4 0 4 94 10 0 36 94 7 94 10 0 18 94 24 0 28
+g91 55 46
+pins g91 55 7 55 30 55 28 0 34 0 8 0 33 55 43 55 7 0 46 55 20 55 3 0 25 55 30 0 20 55 18 55 6 0 28 0 17 0 34 0 41 55 1 55 24 0 33 0 40 55 3 0 29 55 0 0 35 55 27 55 17 55 30 0 26
+g92 67 2
+pins g92 67 0 0 1 0 0 67 0 0 2 0 2 67 1 67 0 0 0 67 2 0 2
+g93 16 48
+pins g93 0 0 0 41 16 39 0 22 0 15 0 27 16 5 0 34 16 17 16 14 16 6 0 10 0 32 16 22 0 4 16 47 0 34 16 2 16 43 0 26 0 36 16 18 16 48 0 37 0 14 16 32
+g94 72 81
+pins g94 0 66 0 45 0 53 72 69 72 81 0 9 72 25 0 18 0 79 72 46 72 74 72 5
+g95 43 7
+pins g95 0 7 43 7 0 6 0 3 0 7 0 3 0 4 0 7 43 6 43 2 43 1 43 1 43 7 43 1 43 0 43 7 0 3 0 5 0 1 43 1 43 4 43 2 0 1 0 2 43 0
+g96 82 82
+pins g96 82 41 0 77 82 15 82 44 0 82 82 26 0 36 0 7 82 69 82 8 82 38 0 3 82 68 82 21 0 79 0 72 0 43 0 17 0 28 0 69 82 35 0 79 0 7 0 39 82 15 82 9 82 75 0 72 82 71 82 26 82 43 0 22
+g97 23 75
+pins g97 0 55 0 23 23 4 0 64 23 14
+g98 70 51
+pins g98 70 44 70 16 70 4 70 33 70 24 0 27 70 35 70 38 70 8 0 50 0 42 70 35 70 19 0 31 70 29 70 15 70 15 70 6 70 19 0 49 70 28 70 23 70 3 0 13 70 22 70 10 70 2 0 0 0 23 70 29 0 39
+g99 22 30
+pins g99 0 18 0 22 22 25 0 18 0 13 0 30 22 7 22 10 0 8 22 1 0 19 22 30 22 5 0 21 22 2 0 13 22 28 22 5 22 26
+g100 83 58
+pins g100 0 47 83 40 83 35 83 56 0 32 0 35 83 19 83 13 0 35 83 21 0 23 83 26 83 47 0 33 0 47 83 53 83 31 83 54 0 23 0 45 83 19 83 11 0 41 0 13 83 56 83 32 83 21 0 35 83 27 83 19 0 9 0 10
+wire g1.p1 g59.p2
+wire g2.p7 g67.p39
+wire g3.p4 g97.p1
+wire g4.p10 g39.p7
+wire g5.p10 g34.p21
+wire g6.p13 g17.p15
+wire g7.p5 g45.p15
+wire g8.p16 g63.p5
+wire g9.p7 g68.p8
+wire g10.p9 g77.p9
+wire g11.p26 g9.p29
+wire g12.p9 g31.p3
+wire g13.p10 g2.p3
+wire g14.p13 g73.p3
+wire g15.p20 g42.p7
+wire g16.p17 g83.p18
+wire g17.p24 g72.p1
+wire g18.p33 g79.p12
+wire g19.p18 g64.p5
+wire g20.p9 g79.p7
+wire g21.p3 g50.p8
+wire g22.p25 g99.p17
+wire g23.p17 g5.p14
+wire g24.p24 g99.p7
+wire g25.p2 g47.p3
+wire g26.p3 g17.p33
+wire g27.p7 g84.p12
+wire g28.p11 g90.p9
+wire g29.p13 g44.p2
+wire g30.p2 g93.p3
+wire g31.p1 g47.p1
+wire g32.p11 g4.p25
+wire g33.p14 g66.p7
+wire g34.p10 g95.p16
+wire g35.p22 g86.p12
+wire g36.p3 g59.p1
+wire g37.p4 g36.p16
+wire g38.p3 g20.p24
+wire g39.p6 g69.p25
+wire g40.p32 g44.p1
+wire g41.p14 g20.p33
+wire g42.p4 g38.p11
+wire g43.p2 g50.p9
+wire g44.p2 g38.p27
+wire g45.p17 g77.p7
+wire g46.p5 g21.p2
+wire g47.p9 g37.p3
+wire g48.p6 g30.p2
+wire g49.p7 g52.p12
+wire g50.p9 g24.p3
+wire g51.p3 g57.p7
+wire g52.p20 g24.p17
+wire g53.p8 g30.p1
+wire g54.p1 g95.p18
+wire g55.p16 g84.p6
+wire g56.p6 g11.p8
+wire g57.p14 g15.p18
+wire g58.p12 g41.p6
+wire g59.p4 g55.p13
+wire g60.p2 g86.p19
+wire g61.p4 g88.p13
+wire g62.p10 g54.p27
+wire g63.p16 g4.p8
+wire g64.p12 g44.p1
+wire g65.p1 g17.p13
+wire g66.p19 g51.p14
+wire g67.p5 g88.p25
+wire g68.p13 g64.p10
+wire g69.p33 g60.p1
+wire g70.p10 g2.p7
+wire g71.p7 g54.p22
+wire g72.p3 g80.p20
+wire g73.p3 g49.p11
+wire g74.p13 g17.p18
+wire g75.p4 g3.p2
+wire g76.p19 g36.p4
+wire g77.p8 g46.p3
+wire g78.p19 g16.p25
+wire g79.p3 g78.p1
+wire g80.p2 g42.p4
+wire g81.p9 g61.p1
+wire g82.p1 g32.p8
+wire g83.p11 g35.p21
+wire g84.p11 g76.p30
+wire g85.p1 g14.p6
+wire g86.p10 g58.p1
+wire g87.p3 g25.p5
+wire g88.p2 g13.p11
+wire g89.p33 g6.p14
+wire g90.p5 g76.p5
+wire g91.p28 g38.p22
+wire g92.p4 g46.p2
+wire g93.p16 g34.p26
+wire g94.p10 g23.p12
+wire g95.p6 g27.p2
+wire g96.p32 g99.p15
+wire g97.p5 g26.p13
+wire g98.p3 g46.p9
+wire g99.p12 g84.p5
+wire g100.p22 g16.p2
+wire g25.p2 g80.p13
+wire g86.p2 g77.p33
+wire g6.p3 g99.p18
+wire g69.p21 g70.p7
+wire g95.p2 g32.p3
+wire g58.p11 g8.p31
+wire g18.p27 g91.p18
+wire g86.p13 g96.p13
+wire g72.p4 g99.p17
+wire g70.p7 g36.p37
+wire g90.p22 g6.p18
+wire g81.p24 g25.p6
+wire g67.p12 g4.p11
+wire g43.p6 g28.p9
+wire g87.p4 g22.p5
+wire g4.p11 g16.p18
+wire g77.p35 g71.p19
+wire g33.p5 g9.p13
+wire g13.p5 g64.p1
+wire g34.p13 g90.p5
+wire g32.p17 g27.p1
+wire g15.p31 g8.p37
+wire g72.p4 g37.p7
+wire g64.p11 g97.p1
+wire g24.p10 g98.p1
+wire g84.p9 g100.p30
+wire g97.p5 g61.p2
+wire g56.p7 g96.p23
+wire g11.p20 g28.p5
+wire g68.p14 g17.p32
+wire g81.p21 g96.p27
+wire g20.p28 g89.p4
+wire g72.p5 g36.p30
+wire g80.p12 g4.p19
+wire g19.p30 g58.p12
+wire g22.p3 g100.p3
+wire g26.p20 g89.p17
+wire g96.p9 g32.p12
+wire g85.p5 g5.p7
+wire g18.p18 g41.p8
+wire g18.p16 g84.p1
+wire g83.p15 g28.p7
+wire g38.p18 g25.p14
+wire g56.p8 g60.p3
+wire g37.p10 g19.p27
+wire g51.p5 g81.p2
+wire g32.p6 g88.p31
+wire g88.p28 g83.p21
+wire g31.p3 g26.p11
+wire g19.p5 g84.p11
+wire g39.p11 g73.p6
+wire g10.p11 g34.p13
+wire g78.p19 g24.p12
+wire g55.p15 g44.p2
+wire g75.p1 g71.p6
+wire g97.p5 g33.p5
+wire g81.p12 g43.p3
+wire g28.p11 g81.p6
+wire g3.p5 g39.p3
+wire g87.p2 g56.p7
+wire g28.p2 g49.p8
+wire g10.p4 g65.p15
+wire g20.p20 g86.p11
+wire g80.p24 g26.p11
+wire g16.p23 g57.p9
+wire g90.p25 g65.p10
+wire g100.p20 g63.p27
+wire g13.p12 g41.p11
+wire g33.p11 g61.p4
+wire g37.p1 g20.p28
+wire g86.p8 g69.p4
+wire g81.p7 g32.p11
+wire g71.p3 g58.p4
+wire g71.p19 g51.p5
+wire g19.p9 g67.p13
+wire g99.p14 g25.p9
+wire g59.p4 g6.p10
+wire g22.p10 g1.p7
+wire g62.p17 g19.p7
+wire g33.p9 g16.p13
+wire g82.p5 g19.p21
+wire g3.p1 g55.p16
+wire g87.p5 g32.p17
+wire g46.p9 g18.p36
+wire g90.p7 g60.p2
+wire g40.p10 g82.p8
+wire g11.p29 g56.p6
+wire g96.p22 g76.p10
+wire g52.p3 g7.p10
+wire g75.p2 g96.p4
+wire g8.p14 g29.p14
+wire g96.p5 g51.p10
+wire g54.p19 g79.p11
+wire g54.p10 g30.p4
+wire g56.p3 g66.p25
+wire g92.p6 g89.p20
+wire g79.p13 g15.p26
+wire g69.p26 g97.p3
+wire g91.p26 g93.p4
+wire g9.p33 g72.p6
+wire g55.p12 g67.p20
+wire g9.p30 g16.p30
+wire g85.p5 g86.p1
+wire g18.p28 g48.p1
+wire g54.p19 g56.p5
+wire g88.p26 g81.p2
+wire g13.p7 g55.p16
+wire g57.p13 g48.p5
+wire g94.p7 g26.p4
+wire g45.p25 g69.p12
+wire g54.p13 g69.p14
+wire g49.p8 g98.p22
+wire g40.p8 g4.p19
+wire g68.p22 g13.p2
+wire g83.p12 g13.p12
+wire g72.p1 g100.p12
+wire g60.p2 g56.p7
+wire g100.p24 g45.p36
+wire g88.p21 g98.p22
+wire g27.p6 g17.p3
+wire g86.p5 g17.p33
+wire g56.p2 g45.p14
+wire g93.p13 g68.p8
+wire g1.p9 g55.p22
+wire g32.p18 g76.p19
+wire g97.p2 g9.p10
+wire g98.p19 g69.p22
+wire g42.p4 g55.p1
+wire g19.p3 g62.p14
+wire g77.p1 g76.p11
+wire g60.p3 g19.p20
+wire g10.p15 g99.p7
+wire g20.p27 g54.p7
+wire g64.p8 g46.p1
+wire g72.p5 g98.p27
+wire g65.p11 g1.p17
+wire g96.p22 g24.p24
+wire g79.p12 g18.p6
+wire g99.p15 g94.p1
+wire g71.p19 g42.p6
+wire g87.p2 g30.p3
+wire g13.p12 g7.p8
+wire g19.p36 g39.p4
+wire g51.p11 g21.p2
+wire g92.p7 g97.p4
+wire g94.p6 g30.p9
+wire g51.p6 g77.p5
+wire g13.p5 g90.p2
+wire g45.p36 g40.p33
+wire g5.p7 g44.p1
+wire g81.p4 g70.p2
+wire g91.p24 g53.p7
+wire g64.p5 g74.p10
+wire g36.p2 g77.p5
+wire g89.p5 g79.p2
+wire g27.p6 g45.p22
+wire g81.p21 g60.p3
+wire g7.p7 g72.p1
+wire g37.p1 g24.p16
+wire g65.p10 g78.p18
+wire g4.p7 g20.p19
+wire g49.p10 g67.p15
+wire g41.p2 g13.p8
+wire g90.p11 g99.p2
+wire g21.p6 g75.p1
+wire g80.p5 g86.p20
+wire g97.p4 g90.p8
+wire g50.p9 g11.p9
+wire g15.p8 g3.p5
+wire g73.p6 g70.p12
+wire g92.p10 g16.p35
+wire g38.p4 g86.p6
+wire g18.p5 g15.p9
+wire g29.p28 g92.p6
+wire g15.p30 g100.p24
+wire g54.p12 g74.p2
+wire g73.p5 g6.p5
+wire g6.p7 g49.p7
+wire g81.p19 g16.p21
+wire g3.p5 g63.p7
+wire g54.p22 g13.p3
+wire g66.p29 g100.p32
+wire g32.p1 g13.p5
+wire g74.p19 g2.p8
+wire g12.p8 g95.p11
+wire g4.p12 g97.p2
+wire g5.p5 g17.p17
+wire g42.p5 g59.p5
+wire g84.p12 g28.p11
+wire g42.p1 g9.p4
+wire g51.p9 g86.p4
+wire g83.p8 g29.p25
+wire g66.p9 g43.p6
+wire g10.p5 g1.p12
+wire g90.p9 g60.p1
+wire g3.p4 g19.p19
+wire g44.p1 g83.p18
+wire g92.p9 g77.p13
+wire g74.p4 g84.p3
+wire g22.p6 g11.p17
+wire g23.p1 g64.p12
+wire g67.p15 g78.p13
+wire g51.p20 g97.p2
+wire g81.p22 g2.p8
+wire g93.p1 g18.p22
+wire g79.p13 g57.p20
+wire g82.p2 g83.p19
+wire g48.p1 g41.p10
+wire g71.p20 g51.p11
+wire g19.p12 g91.p19
+wire g56.p1 g36.p26
+wire g95.p8 g72.p5
+wire g60.p2 g47.p4
+wire g58.p8 g8.p33
+wire g80.p19 g64.p7
+wire g76.p18 g96.p32
+wire g86.p5 g70.p11
+wire g95.p25 g29.p19
+wire g98.p3 g16.p34
+wire g17.p2 g81.p23
+wire g34.p14 g82.p16
+wire g7.p3 g98.p27
+wire g64.p12 g42.p5
+wire g81.p24 g67.p5
+wire g45.p8 g50.p8
+wire g64.p1 g31.p1
+wire g81.p12 g44.p1
+wire g98.p20 g1.p11
+wire g15.p39 g1.p10
+wire g24.p3 g60.p3
+wire g67.p25 g92.p5
+wire g28.p16 g33.p5
+wire g70.p9 g2.p4
+wire g79.p9 g37.p8
+wire g61.p4 g3.p1
+wire g83.p1 g66.p1
+wire g76.p9 g91.p15
+wire g84.p2 g83.p28
+wire g25.p4 g44.p2
+wire g1.p7 g34.p12
+wire g89.p30 g8.p7
+wire g16.p11 g58.p12
+wire g33.p13 g45.p26
+wire g21.p2 g85.p6
+wire g50.p2 g92.p10
+wire g54.p10 g27.p6
+wire g40.p17 g37.p9
+wire g79.p3 g90.p25
+wire g27.p2 g96.p2
+wire g49.p8 g83.p25
+wire g63.p13 g95.p7
+wire g51.p17 g58.p5
+wire g14.p7 g31.p2
+wire g62.p1 g10.p27
+wire g82.p27 g35.p10
+wire g53.p3 g4.p2
+wire g72.p2 g83.p14
+wire g51.p17 g98.p4
+wire g64.p3 g97.p5
+wire g7.p7 g60.p2
+wire g91.p19 g27.p8
+wire g34.p18 g85.p5
+wire g9.p18 g57.p30
+wire g71.p20 g4.p25
+wire g46.p2 g10.p19
+wire g51.p1 g53.p9
+wire g22.p25 g39.p6
+wire g85.p2 g36.p37
+wire g22.p22 g25.p1
+wire g31.p1 g58.p12
+wire g25.p10 g12.p1
+wire g66.p27 g39.p10
+wire g84.p12 g92.p3
+wire g82.p27 g21.p5
+wire g74.p21 g93.p14
+wire g39.p1 g77.p1
+wire g95.p11 g83.p5
+wire g49.p3 g63.p15
+wire g34.p14 g67.p22
+wire g65.p12 g35.p21
+wire g37.p5 g24.p9
+wire g88.p2 g87.p3
+wire g65.p16 g95.p1
+wire g86.p19 g10.p9
+wire g49.p6 g22.p2
+wire g2.p5 g43.p13
+wire g64.p6 g90.p26
+wire g3.p1 g100.p2
+wire g74.p8 g64.p1
+wire g14.p7 g51.p15
+wire g56.p5 g50.p9
+wire g90.p8 g6.p4
+wire g14.p14 g44.p2
+wire g76.p30 g89.p15
+wire g56.p5 g38.p21
+wire g54.p12 g71.p16
+wire g78.p16 g6.p15
+wire g49.p11 g29.p28
+wire g1.p16 g37.p8
+wire g57.p4 g96.p4
+wire g24.p20 g57.p6
+wire g70.p12 g39.p11
+wire g67.p34 g54.p14
+wire g19.p37 g77.p17
+wire g79.p6 g36.p17
+wire g69.p18 g31.p4
+wire g82.p21 g60.p1
+wire g65.p5 g14.p5
+wire g72.p3 g45.p3
+wire g92.p10 g90.p24
+wire g77.p34 g16.p9
+wire g85.p4 g46.p3
+wire g97.p5 g16.p3
+wire g32.p2 g81.p24
+wire g81.p16 g8.p37
+wire g58.p1 g66.p11
+wire g30.p6 g42.p7
+wire g93.p14 g97.p4
+wire g1.p3 g21.p4
+wire g56.p7 g75.p2
+wire g4.p12 g96.p4
+wire g62.p1 g67.p7
+wire g44.p2 g78.p15
+wire g46.p6 g34.p4
+wire g4.p18 g71.p13
+wire g22.p13 g54.p12
+wire g57.p11 g37.p2
+wire g22.p11 g95.p14
+wire g20.p15 g27.p7
+wire g29.p27 g17.p30
+wire g76.p7 g100.p2
+wire g10.p18 g45.p23
+wire g38.p15 g56.p7
+wire g23.p14 g84.p10
+wire g86.p9 g28.p24
+wire g17.p29 g70.p11
+wire g61.p5 g85.p4
+wire g64.p10 g99.p13
+wire g5.p7 g88.p27
+wire g10.p22 g63.p19
+wire g55.p16 g70.p2
+wire g99.p5 g13.p8
+wire g20.p10 g74.p23
+wire g28.p15 g34.p3
+wire g24.p11 g50.p9
+wire g23.p10 g19.p21
+wire g55.p11 g83.p7
+wire g76.p2 g58.p2
+wire g45.p10 g53.p13
+wire g75.p2 g28.p7
+wire g15.p2 g89.p8
+wire g67.p2 g100.p23
+wire g48.p1 g18.p10
+wire g71.p11 g87.p6
+wire g81.p1 g70.p5
+wire g17.p5 g45.p31
+wire g98.p31 g55.p19
+wire g52.p21 g41.p5
+wire g15.p34 g39.p10
+wire g50.p5 g70.p6
+wire g72.p2 g56.p4
+wire g95.p4 g35.p6
+wire g85.p5 g33.p14
+wire g63.p4 g22.p14
+wire g38.p6 g55.p17
+wire g25.p8 g45.p7
+wire g18.p19 g48.p6
+wire g93.p1 g29.p20
+wire g21.p3 g5.p6
+wire g57.p23 g35.p8
+wire g15.p8 g39.p19
+wire g6.p17 g28.p14
+wire g39.p14 g93.p23
+wire g34.p26 g60.p3
+wire g50.p4 g64.p9
+wire g10.p19 g66.p20
+wire g32.p6 g100.p29
+wire g61.p2 g91.p12
+wire g17.p2 g49.p3
+wire g24.p16 g11.p7
+wire g94.p10 g98.p16
+wire g15.p19 g73.p5
+wire g74.p12 g82.p17
+wire g56.p7 g92.p10
+wire g38.p7 g99.p6
+wire g47.p3 g65.p2
+wire g15.p23 g63.p30
+wire g88.p26 g13.p11
+wire g15.p14 g37.p3
+wire g39.p1 g13.p6
+wire g27.p3 g49.p8
+wire g73.p2 g83.p24
+wire g9.p3 g11.p12
+wire g24.p10 g67.p15
+wire g85.p6 g31.p3
+wire g74.p13 g92.p6
+wire g74.p3 g82.p24
+wire g70.p13 g11.p11
+wire g39.p8 g26.p15
+wire g61.p1 g88.p32
+wire g56.p3 g98.p6
+wire g99.p7 g49.p3
+wire g7.p10 g61.p2
+wire g79.p4 g54.p8
+wire g61.p1 g25.p11
+wire g40.p36 g88.p15
+wire g57.p15 g20.p11
+wire g31.p2 g12.p3
+wire g44.p1 g90.p2
+wire g39.p19 g28.p1
+wire g6.p13 g58.p7
+wire g45.p33 g89.p5
+wire g89.p24 g21.p2
+wire g6.p17 g80.p29
+wire g3.p1 g19.p14
+wire g30.p4 g56.p6
+wire g3.p3 g44.p2
+wire g23.p1 g100.p11
+wire g7.p9 g63.p18
+wire g89.p23 g57.p3
+wire g48.p1 g27.p2
+wire g60.p2 g59.p5
+wire g10.p5 g13.p12
+wire g11.p28 g50.p1
+wire g82.p11 g25.p15
+wire g23.p13 g95.p5
+wire g66.p22 g54.p7
+wire g45.p1 g53.p3
+wire g18.p36 g13.p9
+wire g89.p14 g67.p8
+wire g11.p23 g33.p11
+wire g16.p31 g62.p4
+wire g74.p3 g25.p8
+wire g18.p18 g84.p3
+wire g52.p1 g5.p2
+wire g7.p3 g36.p14
+wire g94.p9 g66.p10
+wire g74.p22 g51.p11
+wire g62.p18 g32.p3
+wire g67.p27 g78.p4
+wire g18.p11 g99.p13
+wire g31.p1 g71.p2
+wire g32.p1 g61.p4
+wire g48.p4 g70.p5
+wire g10.p16 g7.p9
+wire g74.p16 g49.p10
+wire g41.p15 g21.p4
+wire g86.p2 g51.p19
+wire g15.p12 g76.p24
+wire g1.p4 g92.p11
+wire g74.p23 g37.p11
+wire g27.p1 g82.p5
+wire g79.p6 g65.p5
+wire g66.p3 g82.p19
+wire g41.p8 g79.p13
+wire g82.p10 g36.p8
+wire g76.p10 g59.p3
+wire g27.p6 g14.p6
+wire g21.p4 g22.p16
+wire g66.p4 g58.p5
+wire g92.p7 g48.p6
+wire g13.p11 g88.p1
+wire g74.p10 g1.p23
+wire g70.p1 g22.p9
+wire g76.p20 g48.p4
+wire g59.p4 g34.p3
+wire g83.p14 g36.p35
+wire g11.p13 g40.p15
+wire g88.p32 g74.p4
+wire g20.p29 g81.p3
+wire g4.p16 g24.p19
+wire g34.p21 g98.p10
+wire g92.p7 g33.p13
+wire g86.p12 g63.p10
+wire g66.p19 g89.p13
+wire g60.p2 g73.p4
+wire g67.p17 g98.p8
+wire g36.p40 g82.p4
+wire g34.p3 g86.p7
+wire g44.p2 g52.p6
+wire g96.p9 g3.p5
+wire g46.p8 g34.p18
+wire g90.p11 g23.p13
+wire g61.p4 g83.p27
+wire g25.p8 g60.p3
+wire g2.p2 g14.p7
+wire g34.p16 g66.p28
+wire g15.p29 g90.p17
+wire g19.p4 g2.p1
+wire g71.p3 g48.p5
+wire g78.p15 g21.p5
+wire g35.p26 g33.p8
+wire g26.p2 g96.p10
+wire g42.p4 g63.p19
+wire g91.p28 g11.p5
+wire g6.p4 g55.p11
+wire g71.p10 g96.p10
+wire g67.p27 g33.p3
+wire g84.p8 g5.p16
+wire g21.p5 g77.p24
+wire g29.p2 g44.p3
+wire g34.p26 g22.p23
+wire g89.p2 g7.p4
+wire g69.p5 g29.p25
+wire g97.p2 g20.p16
+wire g25.p6 g9.p16
+wire g40.p32 g19.p8
+wire g91.p30 g19.p8
+wire g96.p24 g88.p6
+wire g26.p10 g37.p9
+wire g92.p6 g12.p6
+wire g45.p3 g1.p20
+wire g79.p12 g83.p18
+wire g71.p17 g6.p2
+wire g87.p7 g54.p25
+wire g56.p8 g91.p3
+wire g20.p7 g77.p35
+wire g50.p8 g6.p13
+wire g20.p13 g12.p10
+wire g92.p8 g67.p29
+wire g12.p3 g88.p10
+wire g81.p4 g36.p36
+wire g62.p11 g48.p3
+wire g93.p12 g52.p7
+wire g65.p9 g49.p10
+wire g32.p3 g20.p28
+wire g73.p5 g27.p4
+wire g60.p3 g48.p6
+wire g88.p20 g1.p11
+wire g35.p23 g82.p9
+wire g48.p3 g23.p17
+wire g96.p6 g21.p4
+wire g69.p29 g49.p4
+wire g98.p6 g9.p33
+wire g90.p25 g96.p18
+wire g88.p14 g6.p4
+wire g23.p2 g54.p10
+wire g23.p6 g77.p35
+wire g26.p14 g86.p6
+wire g93.p21 g13.p7
+wire g91.p3 g57.p27
+wire g75.p1 g90.p10
+wire g28.p2 g39.p1
+wire g62.p5 g50.p6
+wire g42.p7 g5.p17
+wire g7.p5 g98.p21
+wire g36.p34 g52.p14
+wire g44.p1 g50.p9
+wire g6.p10 g97.p3
+wire g56.p5 g55.p5
+wire g22.p5 g40.p36
+wire g64.p1 g50.p5
+wire g37.p3 g44.p1
+wire g3.p3 g2.p9
+wire g94.p6 g81.p2
+wire g87.p5 g81.p21
+wire g93.p18 g31.p3
+wire g51.p22 g67.p20
+wire g2.p3 g85.p2
+wire g25.p1 g74.p2
+wire g80.p22 g96.p27
+wire g87.p6 g56.p4
+wire g74.p19 g68.p27
+wire g15.p26 g96.p27
+wire g74.p18 g85.p3
+wire g59.p1 g26.p11
+wire g40.p24 g29.p13
+wire g59.p5 g47.p3
+wire g55.p18 g28.p6
+wire g87.p2 g9.p28
+wire g70.p13 g76.p25
+wire g78.p4 g66.p21
+wire g86.p1 g30.p7
+wire g84.p5 g91.p28
+wire g14.p1 g24.p5
+wire g37.p6 g8.p39
+wire g72.p5 g99.p15
+wire g39.p18 g18.p14
+wire g95.p10 g17.p26
+wire g78.p11 g18.p29
+wire g26.p15 g80.p5
+wire g38.p19 g21.p1
+wire g82.p6 g38.p9
+wire g64.p9 g91.p16
+wire g61.p1 g65.p3
+wire g49.p10 g31.p4
+wire g11.p27 g4.p10
+wire g63.p25 g51.p20
+wire g93.p21 g95.p10
+wire g68.p21 g91.p28
+wire g58.p8 g42.p5
+wire g3.p4 g71.p11
+wire g84.p13 g75.p4
+wire g42.p7 g77.p17
+wire g47.p8 g25.p11
+wire g37.p5 g70.p4
+wire g31.p3 g7.p1
+wire g1.p5 g31.p1
+wire g7.p7 g22.p4
+wire g90.p6 g2.p3
+wire g44.p1 g90.p23
+wire g55.p19 g54.p18
+wire g77.p24 g89.p11
+wire g50.p3 g18.p13
+wire g85.p2 g27.p4
+wire g48.p4 g21.p4
+wire g89.p10 g92.p3
+wire g10.p8 g43.p13
+wire g94.p2 g47.p7
+wire g63.p3 g43.p9
+wire g92.p6 g7.p9
+wire g32.p14 g46.p6
+wire g45.p31 g70.p1
+wire g14.p6 g6.p13
+wire g40.p35 g17.p25
+wire g67.p22 g38.p9
+wire g94.p2 g74.p15
+wire g21.p4 g42.p3
+wire g58.p6 g15.p24
+wire g24.p11 g32.p11
+wire g66.p10 g97.p5
+wire g47.p10 g59.p4
+wire g58.p10 g78.p1
+wire g15.p9 g56.p7
+wire g69.p27 g100.p16
+wire g37.p9 g28.p3
+wire g4.p6 g28.p3
+wire g32.p19 g19.p27
+wire g59.p5 g51.p3
+wire g11.p7 g12.p7
+wire g15.p22 g90.p3
+wire g72.p1 g71.p19
+wire g68.p15 g74.p19
+wire g66.p1 g100.p22
+wire g37.p12 g81.p16
+wire g35.p13 g92.p3
+wire g5.p1 g28.p14
+wire g17.p21 g66.p6
+wire g35.p13 g59.p3
+wire g73.p2 g64.p10
+wire g33.p5 g83.p32
+wire g68.p3 g42.p4
+wire g82.p26 g38.p22
+wire g31.p3 g30.p3
+wire g33.p1 g91.p4
+wire g27.p3 g37.p6
+wire g44.p2 g57.p10
+wire g86.p1 g63.p2
+wire g49.p2 g99.p3
+wire g24.p20 g65.p12
+wire g64.p2 g78.p2
+wire g1.p10 g55.p16
+wire g94.p2 g21.p4
+wire g94.p12 g63.p8
+wire g52.p22 g71.p5
+wire g57.p19 g36.p26
+wire g22.p28 g87.p4
+wire g22.p19 g34.p11
+wire g77.p21 g5.p13
+wire g13.p2 g68.p9
+wire g53.p9 g4.p21
+wire g81.p8 g16.p27
+wire g16.p13 g52.p5
+wire g55.p9 g46.p4
+wire g100.p2 g95.p20
+wire g72.p4 g2.p2
+wire g85.p1 g95.p4
+wire g90.p20 g93.p13
+wire g80.p29 g17.p8
+wire g20.p24 g92.p4
+wire g4.p5 g69.p36
+wire g98.p12 g92.p6
+wire g11.p18 g25.p2
+wire g92.p4 g58.p8
+wire g38.p12 g10.p19
+wire g39.p9 g50.p8
+wire g94.p2 g49.p10
+wire g82.p21 g94.p8
+wire g72.p1 g70.p6
+wire g68.p25 g62.p15
+wire g29.p30 g3.p3
+wire g56.p2 g42.p1
+wire g37.p7 g16.p16
+wire g69.p27 g97.p5
+wire g36.p20 g75.p4
+wire g65.p4 g26.p16
+wire g41.p19 g79.p13
+wire g1.p1 g93.p2
+wire g42.p6 g31.p1
+wire g5.p10 g94.p9
+wire g74.p10 g23.p10
+wire g10.p14 g43.p1
+wire g82.p14 g8.p27
+wire g24.p13 g69.p27
+wire g4.p16 g24.p8
+wire g48.p1 g54.p19
+wire g90.p9 g35.p28
+wire g63.p6 g45.p37
+wire g36.p14 g5.p9
+wire g38.p2 g59.p3
+wire g61.p5 g4.p6
+wire g32.p18 g40.p8
+wire g27.p5 g13.p1
+wire g52.p5 g51.p1
+wire g60.p3 g87.p6
+wire g51.p6 g88.p13
+wire g10.p16 g60.p1

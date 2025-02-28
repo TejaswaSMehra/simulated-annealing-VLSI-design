@@ -18,8 +18,7 @@ This repository implements a simulated annealing algorithm for optimizing the pl
 ## File Descriptions
 
 - **`main.py`**: The main script that parses the input file, runs the simulated annealing optimization, and outputs results.
-- **`simulated_annealing.py`**: Contains the `SimulatedAnnealing` class, which employs a basic simulated annealing technique to minimize wirelength by perturbing gate positions.
-- **`simulated_annealing2.py`**: Implements the `SimulatedAnnealing2` class, which introduces enhancements like grid-based packing and allows for more structured optimization by employing envelope management to prevent overlaps.
+- **`swapping_annealing.py`**: Contains the `SwappingAnnealing` class, which employs a basic simulated annealing technique to minimize wirelength by perturbing gate positions.
 - **`circuit.py`**: Defines the `Circuit` class, which manages gates, nets, and pin configurations.
 - **`gate.py`**: Defines the `Gate` class, representing individual gates with their properties and methods.
 - **`net.py`**: Defines the `Net` class, representing connections between gate pins.
@@ -28,11 +27,7 @@ This repository implements a simulated annealing algorithm for optimizing the pl
 - **`visualizer.py`**: Provides functions for visualizing the circuit and its layout.
 - **`tc_gen.py`**: Generates random test cases for circuit configurations.
 
-## Simulated Annealing Approaches
-
-1. **SimulatedAnnealing**: This implementation uses basic perturbation techniques to explore the solution space. It randomly moves gates and accepts or rejects new configurations based on a probability function that considers cost differences.
-
-2. **SwappingAnnealing**: This enhanced version incorporates a grid-based packing strategy, organizing gates within envelopes to avoid overlaps. It allows for both vertical and horizontal packing, selecting the configuration that minimizes wirelength effectively.
+**SwappingAnnealing**: This enhanced version incorporates a grid-based packing strategy, organizing gates within envelopes to avoid overlaps. It allows for both vertical and horizontal packing, selecting the configuration that minimizes wirelength effectively.
 
 ## Test Cases
 
